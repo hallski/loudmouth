@@ -75,9 +75,6 @@ libloudmouth_1_la_SOURCES =             \
 	lm-old-socket.c                     \
 	lm-old-socket.h                     \
 	                                    \
-	lm-socket.c                         \
-	lm-socket.h                         \
-	                                    \
 	lm-feature-ping.c                   \
 	lm-feature-ping.h                   \
 	                                    \
