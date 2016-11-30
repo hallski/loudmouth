@@ -96,11 +96,13 @@ m4_ifdef([PKG_INSTALLDIR], [PKG_INSTALLDIR])
 
 PKG_CHECK_MODULES(LOUDMOUTH,
                   glib-2.0 >= $GLIB2_REQUIRED
-                  gobject-2.0 >= $GLIB2_REQUIRED)
+                  gobject-2.0 >= $GLIB2_REQUIRED
+                  gio-2.0 >= $GLIB2_REQUIRED)
 
 PKG_CHECK_MODULES(LOUDMOUTHTEST,
                   glib-2.0 >= $GLIB2_TEST_REQUIRED
-                  gobject-2.0 >= $GLIB2_REQUIRED,
+                  gobject-2.0 >= $GLIB2_REQUIRED
+                  gio-2.0 >= $GLIB2_REQUIRED,
                   enable_test=yes, enable_test=no)
 if test "$enable_test" = yes; then
   TEST_DIRS=tests
